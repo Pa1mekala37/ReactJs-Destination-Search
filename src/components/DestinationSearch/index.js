@@ -38,14 +38,14 @@ class DestinationSearch extends Component {
               className="search-icon"
             />
           </div>
-          <ul className="destinations-list">
+          <ol className="destinations-list">
             {searchResults.map(eachDestination => (
               <DestinationItem
                 key={eachDestination.id}
                 destinationDetails={eachDestination}
               />
             ))}
-          </ul>
+          </ol>
         </div>
       </div>
     )
